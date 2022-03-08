@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-5xl font-bold m-3 text-center">Task one</h1>
+        <div class="m-2 p-5">
+            <p>সিম্পল একটা ওয়েবসাইট বানাও। সেখানে একটি ইনপুট ফিল্ডে ইমেইল লিখবে। তারপর সেটার পাশে একটা submit নামে বাটন আছে। সেই সাবমিট বাটনে চাপ দিলে রেগুলার এক্সপ্রেশন (গুগলে সার্চ দিয়ে বের করবে) দিয়ে চেক করবে এটা ভ্যালিড ইমেইল কিনা।
+            </p>
+            <p>ইমেইল যদি ভ্যালিড হয় তাহলে একটা গ্রীন কালার দিয়ে কোন একটা টেক্সট লিখে দিয়ে বলবে তোমার ইমেইল ঠিক আছে।আর যদি ইমেইল ঠিক না হয়। তাহলে একটা লাল কালারের টেক্সট দিয়ে বলবে।ইমেইল ঠিক নাই। ভালো করে ইমেইল দাও।</p>
+        </div>
+        <div class="taskOne grid justify-items-center">
+            <input type="email" class="m-3 text-bold text-center w-1/2 p-3" id="getEmail" placeholder="Enter your Email">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="emailValidator()">Submit</button>
+            <div id="text" class="text-2xl font-bold m-3 text-center"></div>
+        </div>
+    </div>
+    
+    <script src="JS-file/taskOne.js"></script>
+</body>
+</html>
