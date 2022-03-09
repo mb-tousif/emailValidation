@@ -8,10 +8,10 @@ const emailValidator=()=>{
   console.log(email);
   if (regExpForEmail.test(email)) {
     const msg = document.getElementById("text");
-    msg.innerHTML = `<h3 class="text-green-600">Your Input is Valid</h3>`;
+    msg.innerHTML = `<h3 class="text-green-600">Your email is Valid</h3>`;
   } else {
     const msg = document.getElementById("text");
-    msg.innerHTML = `<h3 class="text-red-600">Input  Valid charecter! </h3>`;
+    msg.innerHTML = `<h3 class="text-red-600">Opps! Please enter a valid email address.</h3>`;
   }
   // if (email.match(regExpForEmail)) {
   //   const msg = document.getElementById("text");
