@@ -5,7 +5,7 @@ const getValue=(id)=>{
 const emailValidator=()=>{
   let email = getValue("getEmail");
   const regExpForEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  console.log(email);
+  // console.log(email);
   if (regExpForEmail.test(email)) {
     const msg = document.getElementById("text");
     msg.innerHTML = `<h3 class="text-green-600">Your email is Valid</h3>`;
